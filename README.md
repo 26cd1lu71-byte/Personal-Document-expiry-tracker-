@@ -62,12 +62,5 @@ Example JSON for POST/PUT:
 }
 ```
 
-## 7. Milestone  work completed
-- Unit tests: `tests/test_app.py`
-- API integration tests using Flask's test client
-- UAT checklist: `UAT_TEST_REPORT.md`
-- Query optimization: parameterized queries and indexes on `(user_id, expiry_date)` and `(user_id, title)`
-- Responsive design: mobile-first CSS with responsive navigation, forms, cards and table layout
-
 ## 8. Security and project limitations
 This is an educational prototype. Use a strong `SECRET_KEY` environment variable before deployment. Do not store actual identity document numbers, scans, or sensitive personal data in a classroom demo. For production, add CSRF protection, rate limiting, HTTPS, secure cookie settings, password reset, backups, and a production WSGI server.
