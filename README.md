@@ -1,4 +1,4 @@
-# Personal Documents Expiry Tracker — Milestone 4
+# Personal Documents Expiry Tracker —
 
 A beginner-friendly Flask + SQLite project with authentication, document CRUD, expiry status, automated tests, database indexes, and responsive UI.
 
