@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <p class="eyebrow">STAY ORGANIZED</p>
+  <h1>Never miss an important document expiry.</h1>
+  <p>Keep a simple list of documents and see which ones are expired, expiring soon, or still valid.</p>
+  <div class="actions"><a class="btn" href="{{ url_for('register') }}">Create account</a><a class="btn secondary" href="{{ url_for('login') }}">Login</a></div>
+</section>
+{% endblock %}

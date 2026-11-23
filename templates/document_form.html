@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}{{ 'Edit' if document else 'Add' }} document{% endblock %}
+{% block content %}
+<div class="form-card wide"><h1>{{ 'Edit' if document else 'Add a document' }}</h1>
+<form method="post">
+  <label>Document title<input name="title" required maxlength="100" value="{{ document.title if document else '' }}" placeholder="e.g. Passport"></label>
+  <label>Document type<input name="document_type" required maxlength="60" value="{{ document.document_type if document else '' }}" placeholder="e.g. Identity"></label>
+  <label>Expiry date<input type="date" name="expiry_date" required value="{{ document.expiry_date if document else '' }}"></label>
+  <label>Notes<textarea name="notes" rows="3" maxlength="500">{{ document.notes if document else '' }}</textarea></label>
+  <div class="actions"><button class="btn" type="submit">Save document</button><a class="btn secondary" href="{{ url_for('dashboard') }}">Cancel</a></div>
+</form></div>
+{% endblock %}
