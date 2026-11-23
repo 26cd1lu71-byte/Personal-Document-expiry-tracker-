@@ -62,7 +62,7 @@ Example JSON for POST/PUT:
 }
 ```
 
-## 7. Milestone 4 work completed
+## 7. Milestone  work completed
 - Unit tests: `tests/test_app.py`
 - API integration tests using Flask's test client
 - UAT checklist: `UAT_TEST_REPORT.md`
